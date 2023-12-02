@@ -1,0 +1,22 @@
+<html>
+
+<body>
+
+    <h1 id="name"></h1>
+    <script>
+        function getQueryParamValue(parameter) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parameter);
+            
+        }
+
+        // Usage
+        console.log(window.location);
+        const username = getQueryParamValue("username");
+        document.getElementById("name").innerHTML=username;        
+    
+    </script>
+    
+</body>
+
+</html>
